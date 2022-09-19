@@ -1,0 +1,93 @@
+{
+    // 杨伟伟长期维护
+
+    "httpGet": {
+		"scope": "javascript,typescript",
+		"prefix": "httpGet,get",
+		"body": [
+            "interface ResType {",
+            "\ttest1: string;",
+            "\ttest2: number;",
+            "}",
+            "",
+            "httpGet<ResType>(ServerType.Main, {",
+            "\turl: \"/test\",",
+            "\tparams: {},",
+            "}).then((data: ResType) => {",
+            "\tconsole.log(data);",
+            "});"
+		],
+		"description": "Get请求"
+	},
+
+    "httpPost": {
+		"scope": "javascript,typescript",
+		"prefix": "httpPost",
+		"body": [
+            "httpPost(ServerType.Main, {",
+            "\turl: \"/test\",",
+            "\tparams: {},",
+            "}).then((data) => {",
+            "\tconsole.log(data);",
+            "});"
+		],
+		"description": "Post请求"
+	},
+
+    "httpPostFormData": {
+		"scope": "javascript,typescript",
+		"prefix": "httpPostFormData",
+		"body": [
+            "httpPostFormData(ServerType.Main, {",
+            "\turl: \"/test\",",
+            "\tparams: {},",
+            "}).then((data) => {",
+            "\tconsole.log(data);",
+            "});"
+		],
+		"description": "Post FormData请求"
+	},
+
+    "httpPut": {
+		"scope": "javascript,typescript",
+		"prefix": "httpPut",
+		"body": [
+            "httpPut(ServerType.Main, {",
+            "\turl: \"/test\",",
+            "\tparams: {},",
+            "}).then((data) => {",
+            "\tconsole.log(data);",
+            "});"
+		],
+		"description": "Put请求"
+	},
+
+    "httpDelete": {
+		"scope": "javascript,typescript",
+		"prefix": "httpDelete",
+		"body": [
+            "httpDelete(ServerType.Main, {",
+            "\turl: \"/test\",",
+            "\tparams: {},",
+            "}).then((data) => {",
+            "\tconsole.log(data);",
+            "});"
+		],
+		"description": "Delete请求"
+	},
+
+    "httpAxios": {
+		"scope": "javascript,typescript",
+		"prefix": "httpAxios",
+		"body": [
+            "httpAxios(ServerType.Main, {",
+            "\turl: \"/test\",",
+            "\tparams: {},",
+            "}).then((data) => {",
+            "\tconsole.log(data);",
+            "});"
+		],
+		"description": "Axios原生请求"
+	},
+
+}

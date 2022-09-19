@@ -1,0 +1,33 @@
+{
+    // 李萍长期维护
+
+    "messageError": {
+        "scope": "javascript,typescript",
+        "prefix": "msg,msgError,messageError",
+        "body": ["messageError(\"$1\");"],
+        "description": "新增提示"
+    },
+
+    "messageSuccess": {
+        "scope": "javascript,typescript",
+        "prefix": "msg,msgSuccess,messageSuccess",
+        "body": ["messageSuccess(\"$1\");"],
+        "description": "新增提示"
+    },
+
+    "messageWarning": {
+        "scope": "javascript,typescript",
+        "prefix": "msg,msgWarning,messageWarning",
+        "body": ["messageWarning(\"$1\");"],
+        "description": "新增提示"
+    },
+
+    "messageInfo": {
+        "scope": "javascript,typescript",
+        "prefix": "msg,msgInfo,messageInfo",
+        "body": ["messageInfo(\"$1\");"],
+        "description": "新增提示"
+    },
+
+
+}

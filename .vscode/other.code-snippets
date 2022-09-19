@@ -1,0 +1,25 @@
+
+{
+	// 赵志行长期维护
+
+    "style": {
+		"scope": "vue",
+		"prefix": "style,stylescss,stylesscope",
+		"body": [
+			"<style lang=\"scss\" scoped>$1</style>"
+		],
+		"description": "style标签"
+	},
+
+    "script": {
+		"scope": "vue",
+		"prefix": "script,scriptlang,scriptts",
+		"body": [
+			"<script lang=\"ts\" setup>$1</script>"
+		],
+		"description": "<script lang=\"ts\" setup></script>"
+	},
+
+
+
+}

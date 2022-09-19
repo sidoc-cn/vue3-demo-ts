@@ -1,0 +1,177 @@
+{
+    "git.autorefresh": true, // git自动刷新
+
+    // 保存时使用VSCode 自身格式化程序格式化
+    // "editor.formatOnSave": true,
+
+    // 保存时使用指定插件格式化
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true // 保存时使用eslint格式化
+        // "source.fixAll.stylelint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // 使用prettier作为js的默认格式化工具
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        // 使用prettier作为scss的默认格式化工具
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.format.enable": true,
+    "editor.tabCompletion": "on",
+
+    // 使用vscode搜索时排除指定目录或文件，以提升搜索情况
+    "search.exclude": {
+        "**/.git": true,
+        "**/dist": false, // true表示排除搜索，false不排除
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true
+    },
+
+    // 排除通过vscode打开和管理的文件或目录，以提升vscode使用性能
+    "files.exclude": {
+        "**/node_modules": true,
+        "geckodriver.log": true,
+        "package-lock.json": true,
+        "yarn.lock": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+
+    // 1.0> EVN插件配置，用于.env文件高亮 -------------------------------------------------------------------------
+    "files.associations": {
+        ".env.*": "env" // 所有匹配 .env.* 的文件，都使用 env 语言高亮
+    },
+
+    // 2.0> tabnine插件配置 -------------------------------------------------------------------------------------
+    // 当前关键字中包含如下正则时，禁用tabnine（因为tabnine的优先级高于代码片段，会影响代码片段的显示）
+    "tabnine.disableLineRegex": [
+        "http*",
+        "button*",
+        "message*",
+        "msg*",
+        "import*",
+        "imp*",
+        "script*",
+        "style*",
+        "input*",
+        "select*",
+        "dialog*"
+    ],
+
+    // 3.0> koroFileHeader插件配置 --------------------------------------------------------------------------------
+    "fileheader.configObj": {
+        "autoAdd": false, // 禁止自动在文件头部添加注释
+        "typeParamOrder": "param", // 参数类型 和 参数的位置自定义
+        "moveCursor": true, // 移动光标到`Description :`所在行
+        // 自定义语言注释符号，覆盖插件的注释格式
+        "language": {
+            // 一次匹配多种文件后缀文件 不用重复设置
+            "js/ts/tsx": {
+                "head": "/**", // 统一增加几个*号
+                "middle": " * @",
+                "end": " */",
+                "functionParams": "typescript" // 使用ts语言的解析逻辑
+            }
+        }
+    },
+    // koroFileHeader插件配置 - 头部注释
+    "fileheader.customMade": {
+        "Author": "git config user.name", // 仅获取用户名
+        "Date": "Do not edit", // 文件创建时间(不变)
+        // LastEditors、LastEditTime、FilePath将会自动更新 如果觉得时间更新的太频繁可以使用throttleTime(默认为1分钟)配置更改更新时间。
+        "LastEditors": "git config user.name && git config user.email", // 文件最后编辑者 与Author字段一致
+        // 由于编辑文件就会变更最后编辑时间，多人协作中合并的时候会导致merge
+        // 可以将时间颗粒度改为周、或者月，这样冲突就减少很多。搜索变更时间格式: dateFormat
+        "LastEditTime": "Do not edit", // 文件最后编辑时间
+        // 插件会自动将光标移动到Description选项中 方便输入 Description字段可以在specialOptions更改
+        "Description": "请在此处描述当前文件的作用"
+    },
+    "fileheader.cursorMode": {
+        "param": "",
+        "return": ""
+    },
+
+    // 4.0> Code Spell Checker插件配置 --------------------------------------------------------------------------------
+    // 该插件检查单词拼写错误；遇到如下单词时，不检查拼写错误：
+    "cSpell.words": ["cascader", "echarts", "Mackbook", "Vuex", "YANGWW"],
+
+    // 5.0> better-comments插件配置 --------------------------------------------------------------------------------
+    // 如下配置使该插件在HTML中生效
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+
+    // 6.0> stylelint插件配置 --------------------------------------------------------------------------------------
+    "stylelint.validate": [
+        "css",
+        "less",
+        "postcss",
+        "vue" // necessary for stylelint diagnostics in .vue <style> tag
+    ],
+
+    // 7.0> Volar配置 ----------------------------------------------------------------------------------------------
+    "volar.autoCompleteRefs": false, // 禁用.value，以提升性能
+    "volar.takeOverMode.enabled": false, // 禁用Volar的TS支持，以提升性能；Volar的TS支持用于弥补Vscode内置TS对TS的支持，由于Volar性能过差，此处禁用以尽量获得一些性能上的提升；
+
+    "typescript.suggest.autoImports":false,
+    "javascript.suggest.autoImports":false
+}

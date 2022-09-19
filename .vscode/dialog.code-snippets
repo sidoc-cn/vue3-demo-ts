@@ -1,0 +1,48 @@
+{
+    // 杨伟伟长期维护
+
+    "dialogConfirm": {
+        "scope": "javascript,typescript",
+        "prefix": "dia,dialog,dialogConfirm,$dialog,$dialogConfirm",
+        "body": [
+            "dialogConfirm({",
+            "\ttitle: \"标题\",",
+            "\tcontent: \"内容$1\",",
+            "}).then((done) => {",
+            "\t// TODO",
+            "",
+            "\tdone(); // 关闭弹窗",
+            "});"
+        ],
+        "description": "确认提示"
+    },
+
+    "$importFileDialog": {
+        "scope": "javascript,typescript",
+        "prefix": "this.$importFileDialog",
+        "body": [
+            "this.\\$importFileDialog({",
+            "\ttitle:'导入****',     // 标题",
+            "\ttemplateUrl:'$1',   // 模板下载URL",
+            "\tuploadUrl:'',     // 文件上传URL",
+            "\tremark:''         // 备注信息",
+            "}).then((done)=>{",
+            "\t",
+            "\tdone();  // 关闭弹窗 ",
+            "});"
+        ],
+        "description": "导入文件"
+    },
+
+    "$filePreview": {
+        "scope": "javascript,typescript",
+        "prefix": "this.$filePreview",
+        "body": [
+            "this.\\$filePreview({",
+            "\ttitle:'文件预览',  // 标题",
+            "\turl:'$1',            // 文件预览接口，例如：`/manager/plan/preview?fileName=${item.name}&planId=${this.formData.planId}`",
+            "});"
+        ],
+        "description": "文件预览"
+    }
+}

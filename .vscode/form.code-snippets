@@ -1,0 +1,40 @@
+{
+    // 赵志行长期维护
+    "input.text": {
+        "scope": "html",
+        "prefix": "input.text,inputtext",
+        "body": ["<el-input class=\"input\" v-model=\"value\" type=\"text\" placeholder=\"请输入\"></el-input>"],
+        "description": "文本输入"
+    },
+    "input.password": {
+        "scope": "html",
+        "prefix": "input.password,inputpassword",
+        "body": ["<el-input class=\"input\" v-model=\"value\" type=\"password\" show-password placeholder=\"请输入密码\"></el-input>"],
+        "description": "密码输入"
+    },
+    "select": {
+        "scope": "html",
+        "prefix": "select.demo,selectdemo",
+        "body": [
+            "<select-demo v-model=\"\"></select-demo>"
+        ],
+        "description": "demo下拉选择框"
+    },
+    "SelectTreeDemo": {
+        "scope": "html",
+        "prefix": "select.treedemo,selecttreedemo",
+        "body": [
+            "<select-tree-demo v-model=\"\" :showBox=\"true\" :multiple=\"false\"></select-tree-demo>"
+        ],
+        "description": "treeDemo下拉选择框"
+    },
+    "cascader-area": {
+        "scope": "html",
+        "prefix": "cascader.area,cascaderarea",
+        "body": [
+            "<cascader-area v-model=\"\"></cascader-area>"
+        ],
+        "description": "地区连级选择框"
+    }
+
+}

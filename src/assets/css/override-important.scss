@@ -1,0 +1,30 @@
+/* 覆盖原生或三方组件的全局样式 */
+
+/* 0.0> 滚动条样式 ---------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 6px; /* 横向滚动条宽度 */
+    height: 6px; /* 竖向滚动条宽度 */
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+}
+/* 滚动条 - 滚动块样式 */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 4px;
+}
+/* 滚动条 - 滚动块样式 */
+::-webkit-scrollbar-corner {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+/* 1.0> element-plus全局样式覆盖 ---------------------------------------------------------------- */
+:root {
+    // 基础字体
+    --el-font-size-base: 0.96rem !important;
+
+    // 导航菜单
+    --el-menu-item-height: 3.5rem !important;
+}
+
+/* 2.0> element-plus按钮样式覆盖 ---------------------------------------------------------------- */

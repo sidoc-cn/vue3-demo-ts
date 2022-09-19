@@ -1,0 +1,70 @@
+{
+    // 李萍长期维护
+
+    "button.add": {
+        "scope": "html",
+        "prefix": "button.add,buttonadd",
+        "body": ["<el-button v-auth=\"'add'\" class=\"add\" @click=\"add()\">添加</el-button>"],
+        "description": "新增提示"
+    },
+    "button.edit ": {
+        "scope": "html",
+        "prefix": "button.edit ,buttonedit ",
+        "body": ["<el-button v-auth=\"'edit'\" class=\"edit\" @click=\"edit()\">编辑</el-button>"],
+        "description": "编辑提示"
+    },
+    "button.delete": {
+        "scope": "html",
+        "prefix": "button.delete,buttondelete",
+        "body": ["<el-button v-auth=\"'delete'\" class=\"delete\" @click=\"delete()\">删除</el-button>"],
+        "description": "删除提示"
+    },
+    "button.export": {
+        "scope": "html",
+        "prefix": "button.export,buttonexport",
+        "body": ["<el-button v-auth=\"'export'\" class=\"export\" @click=\"export()\">导出</el-button>"],
+        "description": "导出提示"
+    },
+    "button.import": {
+        "scope": "html",
+        "prefix": "button.import,buttonimport",
+        "body": ["<el-button v-auth=\"'import'\" class=\"import\" @click=\"import()\">导入</el-button>"],
+        "description": "导入提示"
+    },
+    "button.view": {
+        "scope": "html",
+        "prefix": "button.view,buttonview",
+        "body": ["<el-button v-auth=\"'view'\" class=\"view\" @click=\"view()\">查看</el-button>"],
+        "description": "查看提示"
+    },
+    "button.detail": {
+        "scope": "html",
+        "prefix": "button.detail,buttondetail ",
+        "body": ["<el-button v-auth=\"'detail'\" class=\"detail\" @click=\"detail()\">详情</el-button>"],
+        "description": "详情提示"
+    },
+    "button.upload": {
+        "scope": "html",
+        "prefix": "button.upload,buttonupload",
+        "body": ["<el-button v-auth=\"'upload'\" class=\"upload\" @click=\"upload()\">上传</el-button>"],
+        "description": "上传提示"
+    },
+    "button.download": {
+        "scope": "html",
+        "prefix": "button.download,buttondownload ",
+        "body": ["<el-button v-auth=\"'download'\" class=\"download\" @click=\"download()\">下载</el-button>"],
+        "description": "下载提示"
+    },
+    "button.save": {
+        "scope": "html",
+        "prefix": "button.save,buttonsave",
+        "body": ["<el-button v-auth=\"'save'\" class=\"save\" @click=\"save()\">保存</el-button>"],
+        "description": "保存提示"
+    },
+    "button.cancel": {
+        "scope": "html",
+        "prefix": "button.cancel,buttoncancel",
+        "body": ["<el-button v-auth=\"'cancel'\" class=\"cancel\" @click=\"cancel()\">取消</el-button>"],
+        "description": "取消提示"
+    }
+}

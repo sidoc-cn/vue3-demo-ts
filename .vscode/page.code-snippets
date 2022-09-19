@@ -1,0 +1,31 @@
+{
+    // 李萍长期维护
+
+    "$httpPost": {
+		"scope": "vue",
+		"prefix": "page",  // 代码片段的命令
+		"body": [
+            "<template>",
+            "    <div class=\"类名与文件同名\"></div>",
+            "</template>",
+            "",
+            "<script lang=\"ts\" setup>",
+            "const test = ref(\"\");",
+            "$1",
+            "onMounted(() => {",
+            "    console.log(\"1\");",
+            "});",
+            "</script>",
+            "",
+            "<style lang=\"scss\" scoped></style>"
+		],
+		"description": "空页面"
+	}
+
+
+
+
+
+
+
+}
