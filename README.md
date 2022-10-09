@@ -65,3 +65,16 @@ ps -ef | grep nginx
 # 需要在命令前加路径，其它同上；例如：
 /usr/local/nginx/sbin/nginx -t
 ```
+
+```shell
+# 启动
+npm run server-xxxx
+
+# 打包部署
+npm run build-xxxx
+
+# 检查代码质量，并修复
+npm run lint
+
+```
+
