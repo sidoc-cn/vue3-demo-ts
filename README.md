@@ -33,6 +33,19 @@ EChart的文档资料由以下项目组成：
 - ECharts文档: <a href="https://github.com/apache/echarts-doc" target="_blank">echarts-doc</a>
 
 
+
+
+## 前言必读
+
+此模块演示说明`/src/components`下积累所有全局组件，致力于让开发人员以最便捷的方式使用这些组件；
+
+以下全局组件开发规范，请务必遵守:
+1. /src/components 用于存放全局公共组件，业务功能本身的组件禁止放于此目录下；
+2. 为了确保组件的健壮性，所有全局组件的修改必须经过技术研究讨论；
+3. 
+
+
+
 ### Centos 7.x / Mac OS
 ```shell
 # 检查Nginx配置的正确性
